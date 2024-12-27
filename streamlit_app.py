@@ -7,7 +7,7 @@ with st.expander("关于泰语声调查询"):
     st.markdown(
         """
         由于本人是初学者，对于声调公式逻辑完全都是从基础泰语书里以及泰国朋友凤凤结合写的。
-        暂时没有前引子、复合辅音之类的声调查询......后续会有的。哈哈哈哈哈
+        暂时没有前引字、复合辅音之类或者复杂的单词的声调查询......后续会有的。哈哈哈哈哈
         
         关于没有结果显示......那就是没有。如果有但是没有结果显示或者对公式有任何问题可[私信我](https://ergua.cc)修改。
         在此，真诚的感谢您宝贵的意见！
@@ -15,6 +15,7 @@ with st.expander("关于泰语声调查询"):
         如果你要查的单词忘记变形前的元音字母，可在这里查看：
         """
     )
+    st.image("https://images.ergua.cc/images/thai_rule.jpg", caption="清尾辅音变形规则")
 
 
 opts = {}
@@ -75,7 +76,7 @@ with col5:
     output1 = '+'.join(optts1)
     output2 = "+".join(optts2)
     st.write("选中预览")
-    st.info(f"{output1} {output2}")
+    st.success(f"{output1} {output2}")
     
 
 
