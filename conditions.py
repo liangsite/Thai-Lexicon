@@ -149,8 +149,8 @@ def get_difuyin_tone_rule(output1,output2):
         ("低辅音", "短元音", "清尾辅音", "第2声调"): "%s (%s) = %s %s" % (output1,output2, env.sd3, env.yuyinshengdiao[env.sd3]),
         ("低辅音", "短元音", "清尾辅音", "第3声调"): "%s (%s) = %s %s" % (output1,output2, env.sd4, env.yuyinshengdiao[env.sd4]),
         ("低辅音", "短复合元音", "浊尾辅音", "第3声调"): "%s (%s) = %s %s" % (output1,output2, env.sd4, env.yuyinshengdiao[env.sd4]),
-        ("低辅音", "长复合元音", "清尾辅音", "第2声调"): "%s (%s) = %s %s" % (output1,output2, env.sd2, env.yuyinshengdiao[env.sd2]),
-        ("低辅音", "长复合元音", "清尾辅音", "第3声调"): "%s (%s) = %s %s" % (output1,output2, env.sd3, env.yuyinshengdiao[env.sd3]),
-        ("低辅音", "长复合元音", "浊尾辅音", "第3声调"): "%s (%s) = %s %s" % (output1,output2, env.sd3, env.yuyinshengdiao[env.sd3]),
+        ("低辅音", "长复合元音", "清尾辅音", "第2声调"): "%s (%s) = %s %s" % (output1,output2, env.sd3, env.yuyinshengdiao[env.sd3]),
+        ("低辅音", "长复合元音", "清尾辅音", "第3声调"): "%s (%s) = %s %s" % (output1,output2, env.sd4, env.yuyinshengdiao[env.sd4]),
+        ("低辅音", "长复合元音", "浊尾辅音", "第3声调"): "%s (%s) = %s %s" % (output1,output2, env.sd4, env.yuyinshengdiao[env.sd4]),
     }
     return conditions

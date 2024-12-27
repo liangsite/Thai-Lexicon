@@ -63,8 +63,8 @@ with col4:
             label_visibility="collapsed"
         )
         # if opts_shengdiao is not None:
-        if opts_shengdiao:
-            opts[opts_shengdiao] = env.yuyinshengdiao[opts_shengdiao]
+        #if opts_shengdiao:
+        #    opts[opts_shengdiao] = env.yuyinshengdiao[opts_shengdiao]
     else:
         opts_shengdiao=None
 
@@ -74,6 +74,7 @@ with col5:
     optts2 = [option2 for option2 in opts.keys() if option2 is not None]
     output1 = '+'.join(optts1)
     output2 = "+".join(optts2)
+    st.write("选中预览")
     st.info(f"{output1} {output2}")
     
 
