@@ -16,10 +16,6 @@ with st.expander("关于泰语声调查询"):
         """
     )
 
-mongo = st.secrets["mongo"]
-mongodb_user = mongo["username"]
-mongodb_pass = mongo["password"]
-
 
 opts = {}
 col1,col2,col3 = st.columns(3)
