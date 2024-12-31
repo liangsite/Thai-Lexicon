@@ -1,6 +1,12 @@
 import streamlit as st
 import env
 import conditions
+import thai_conditions
+
+# mongodb数据库
+#mongo = st.secrets["mongo"]
+#mongodb_user = mongo["username"]
+#mongodb_pass = mongo["password"]
 
 st.title("泰语声调公式查询")
 with st.expander("关于泰语声调查询"):
@@ -79,10 +85,11 @@ with col5:
     st.success(f"{output1} {output2}")
     
 
-
-
 if opts_fuyin == "中辅音" and on == False:
     # 根据选项匹配字典中的条件
+    # call2 = thai_conditions.get_zhongfuyin_silent_rule()
+    # call_thai = call2.get(tuple(optts2),"null")
+    # call = conditions.get_zhongfuyin_silent_rule(output1,call_thai)
     call = conditions.get_zhongfuyin_silent_rule(output1,output2)
     result = call.get(tuple(optts1), "未匹配任何情况")
     if result != "未匹配任何情况":
